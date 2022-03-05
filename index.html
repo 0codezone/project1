@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <nav class="header">
+      <div class="logo">Code<span>Zone</span></div>
+
+      <div class="menu" id="toggle-button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="navbar" id="nav-bar">
+        <a href="index.html"> Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#content-area1">about</a>
+        <a href="#">T&C</a>
+      </div>
+    </nav>
+
+    <!-- ......  bannerarea ....... -->
+
+    <div class="container">
+      <div id="bannerarea1" class="bannerarea">
+        <h2>Touch Here</h2>
+      </div>
+    </div>
+
+    <!-- .........gallery......  -->
+    <section id="gallery">
+      <h1>Gallery</h1>
+      <div class="image">
+        <div class="img">
+          <img src="images/img1.jpeg" alt="img1" />
+        </div>
+        <div class="img">
+          <img src="images/img2.jpeg" alt="img2" />
+        </div>
+        <div class="img">
+          <img src="images/img3.jpeg" alt="img3" />
+        </div>
+        <div class="img">
+          <img src="images/img4.jpeg" alt="img4" />
+        </div>
+      </div>
+    </section>
+    <!--......... about........ -->
+
+    <section id="content-area1" class="content-area">
+      <div class="wrapper">
+        <h2>ABOUT</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          iure eligendi sed in labore eveniet nulla explicabo! Maxime itaque
+          magni, dicta aut rerum laboriosam soluta fuga nostrum esse, veniam,
+          autem aperiam 2explicabo optio voluptate amet ad sequi velit quidem
+          cum reprehenderit cupiditate magnam? Culpa?
+        </p>
+      </div>
+    </section>
+
+    <!--............. footer .............. -->
+
+    <footer class="footer">
+      <div id="footer1">
+        <a
+          id="fb"
+          href="https://www.facebook.com/profile.php?id=100050575041259"
+          target="_blank"
+          ><i class="fa fa-facebook-f" aria-hidden="true"></i
+        ></a>
+        <a
+          id="ig"
+          href="https://www.instagram.com/____mohit_._/"
+          target="_blank"
+          ><i class="fa fa-instagram" aria-hidden="true"> </i>
+        </a>
+      </div>
+    </footer>
+    <script src="js/mkd.js"></script>
+  </body>
+  <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const navList = document.getElementById("nav-bar");
+
+    toggleButton.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  </script>
+</html>

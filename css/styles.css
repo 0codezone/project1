@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    /* position: fixed; */
+}
+.header span{
+    color: rgba(65, 56, 53, 0.719);
+}
+
+.logo {
+    display: flex;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: #cc7228be;
+}
+
+/*              ....toggle button...    .  */
+.menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 1rem;
+    transition: all 0.3s linear;
+}
+.menu:hover {
+    transform: rotate(90deg);
+  }
+.menu div {
+    border-radius: 1rem;
+    width: 2rem;
+    height: .3rem;
+    background-color: rgba(0, 0, 0, 0.808);
+    margin: .1rem 0;
+  }
+
+  /*  . .  .     . . .   navbar  . ..   ...         */
+  .navbar a {
+      text-transform: uppercase;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 1rem;
+    padding: .5rem;
+    color: #cc7228be;
+    font-weight: bold;
+}
+.navbar a:hover {
+    background-color: rgb(235 243 215);
+}
+
+
+/* ..............banner container ........... */
+
+.container {
+    background-image: url("https://media.istockphoto.com/photos/orange-background-for-halloween-holiday-with-black-spiders-copy-space-picture-id1272923767?k=20&m=1272923767&s=612x612&w=0&h=8sWRC4LSCQe7L8MzQFb6mbukzTZ-BYORqJZsKM0LYFQ=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background: linear-gradient(to top,#ffecab, #c3a03dd9, #d79d33, #c18820ed);   */
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* /////////////////////////// */
+
+.bannerarea {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 20rem; */
+    /* height: 10rem; */
+    /* border: 2px solid green; */
+    margin: 1rem;
+}
+.bannerarea {
+    transition-property: background-color transform 1s ease;
+    transition-duration: 1s;
+}
+#bannerarea1:hover {
+    /* background-color: rgba(105, 128, 104, 0.89); */
+    /* background-color: rgb(242, 200, 173); */
+    /* border-radius: 3rem; */
+    box-shadow: inset 0rem 0rem 2rem 0rem beige, 0rem 0rem 2rem 0rem #cc7228be;
+    /* transform: rotate(90deg); */
+}
+
+#bannerarea1 h2 {
+    padding: 2rem;
+    font-size: 3rem;
+    transition: transform 1s ease;
+    color: rgba(24, 22, 22, 0.96);
+    background-color: rgba(245, 245, 245, 0.151);
+}
+
+#bannerarea1 h2:hover {
+    /* transform: scale(1.1);   mtlv scale(x y)  */
+    /* transform: rotate(45deg); */
+    /* transform: skew(45deg); */
+    /* transform: translate(3rem 2rem);  (x y)  */
+    transform: scale(0);
+    /* color: #bda41d; */
+}
+
+/* .../.......gallery.........  */
+
+section {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1:hover {
+    color: #cc7228be;
+    transform: scale(1.2);
+
+}
+
+section h1 {
+    transition: transform .3s ease;
+    font-size: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+    text-transform: uppercase;
+}
+
+section .image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    width: 12rem;
+    border-radius: 1.2rem;
+    margin: .6rem;
+}
+
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+/* ........details.....  */
+
+.wrapper h2:hover {
+    color: #cc7228be;
+    transform: scale(1.2);
+
+}
+
+.wrapper h2 {
+    transition: transform .3s ease;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.wrapper p {
+    font-size: 1.3rem;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem 2rem 0rem 2rem;
+    text-align: center;
+
+}
+
+.content-area .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* .....footer...... */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: rgb(62, 62, 70);
+    /* margin:1rem; */
+}
+
+footer a {
+    color: whitesmoke;
+    margin: 0.5rem;
+}
+
+#footer1 {
+    margin: 1rem;
+}
+
+
+/* //////////////////............................./////////////////////// */
+
+@media all and (max-width: 700px) {
+    .menu {
+        display: flex;
+        top: 1.5rem;
+        left: 1rem;
+    }
+
+    .logo{
+        text-shadow: .1rem 0rem .2rem black;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        
+    }
+    .header{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navbar a {
+        /* border: 1px solid whitesmoke; */
+        /* border-radius: 1rem; */
+        color: rgba(46, 37, 37, 0.905);
+        margin: 0;
+        /* background-color: #e2943bb2; */
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .active{
+        display: block;
+    }
+}
