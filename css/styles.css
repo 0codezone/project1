@@ -87,34 +87,34 @@
     /* border: 2px solid green; */
     margin: 1rem;
 }
-.bannerarea {
+/* .bannerarea {
     transition-property: background-color transform 1s ease;
-    transition-duration: 1s;
-}
-#bannerarea1:hover {
+    transition-duration: 1s; */
+/* } */
+/* #bannerarea1:hover { */
     /* background-color: rgba(105, 128, 104, 0.89); */
     /* background-color: rgb(242, 200, 173); */
     /* border-radius: 3rem; */
-    box-shadow: inset 0rem 0rem 2rem 0rem beige, 0rem 0rem 2rem 0rem #cc7228be;
+    /* box-shadow: inset 0rem 0rem 2rem 0rem beige, 0rem 0rem 2rem 0rem #cc7228be; */
     /* transform: rotate(90deg); */
-}
+/* } */
 
 #bannerarea1 h2 {
     padding: 2rem;
     font-size: 3rem;
-    transition: transform 1s ease;
+    /* transition: transform 1s ease; */
     color: rgba(24, 22, 22, 0.96);
-    background-color: rgba(245, 245, 245, 0.151);
+    background-color: rgba(245, 245, 245, 0.164);
 }
 
-#bannerarea1 h2:hover {
-    /* transform: scale(1.1);   mtlv scale(x y)  */
+/* #bannerarea1 h2:hover { */
+    /* transform: scale(1.1);   means scale(x y)  */
     /* transform: rotate(45deg); */
     /* transform: skew(45deg); */
     /* transform: translate(3rem 2rem);  (x y)  */
-    transform: scale(0);
+    /* transform: scale(0); */
     /* color: #bda41d; */
-}
+/* } */
 
 /* .../.......gallery.........  */
 
@@ -128,7 +128,7 @@ section {
 
 section h1:hover {
     color: #cc7228be;
-    transform: scale(1.2);
+    transform: scale(1);
 
 }
 
